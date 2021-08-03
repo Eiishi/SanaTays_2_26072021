@@ -30,7 +30,7 @@
                 <p>En plein centre ville ou en pleine nature</p>
                 <div>
                     <form method="post" action="#">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="fas fa-map-marker-alt" style="color: black"></i>
                         <input type="search" name="recherche" placeholder="Marseille, France"/>
                         <input type="submit" value="Rechercher"/>
                     </form>
@@ -62,12 +62,13 @@
 
 <!-- partie du milieu : "hébergements" et "les plus populaires" -->
 
-            <section>
-                <article>
+            <section id="section-milieu">
+                <article id="hebergements">
                     <h1> Hébergements à Marseille </h1>
-                    <div>
-                        <div>
+                    <div class="logements">
+                        <div class="logement">
                             <img src="images/hebergements/4_small/auberge-cannebiere.jpg" alt="auberge de la cannebiere" />
+                            <div class="description">
                             <h2> Auberge de la Cannebière </h2>
                             <p> Nuit à partir de <strong>25€</strong></p>
                             <div>
@@ -75,11 +76,13 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star" style="color: rgba(128, 128, 128, 0.3);"></i>
+                            </div>
                             </div>
                         </div>
-                        <div>
+                        <div class="logement">
                             <img src="images/hebergements/4_small/hotel-port.jpg" alt="hotel du port" />
+                            <div class="description">
                             <h2> Hôtel du port </h2>
                             <p> Nuit à partir de <strong>52€</strong></p>
                             <div>
@@ -89,9 +92,11 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                             </div>
+                            </div>
                         </div>
-                        <div>
+                        <div class="logement">
                             <img src="images/hebergements/4_small/hotel-mouettes.jpg" alt="hotel les mouettes" />
+                            <div class="description">
                             <h2> Hôtel Les mouettes </h2>
                             <p> Nuit à partir de <strong>76€</strong></p>
                             <div>
@@ -99,23 +104,27 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star" style="color: rgba(128, 128, 128, 0.3);"></i>
+                            </div>
                             </div>
                         </div>
-                        <div>
+                        <div class="logement">
                             <img src="images/hebergements/4_small/hotel-mer.jpg" alt="hotel de la mer" />
+                            <div class="description">
                             <h2> Hôtel de la mer </h2>
                             <p> Nuit à partir de <strong>46€</strong></p>
                             <div>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star" style="color: rgba(128, 128, 128, 0.3);"></i>
+                                <i class="fas fa-star" style="color: rgba(128, 128, 128, 0.3);"></i>
+                            </div>
                             </div>
                         </div>
-                        <div>
+                        <div class="logement">
                             <img src="images/hebergements/4_small/auberge-panier.jpg" alt="auberge le panier" />
+                            <div class="description">
                             <h2> Auberge Le Panier </h2>
                             <p> Nuit à partir de <strong>23€</strong></p>
                             <div>
@@ -123,11 +132,13 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star" style="color: rgba(128, 128, 128, 0.3);"></i>
+                            </div>
                             </div>
                         </div>
-                        <div>
+                        <div class="logement">
                             <img src="images/hebergements/4_small/hotel-amina.jpg" alt="hotel chez amina" />
+                            <div class="description">
                             <h2> Hôtel chez Amina </h2>
                             <p> Nuit à partir de <strong>96€</strong></p>
                             <div>
@@ -137,50 +148,59 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                             </div>
+                            </div>
                         </div>
                     </div>
-                    <p> Afficher plus </p>
+                    <p><strong> Afficher plus </strong></p>
                 </article>
                 <aside>
-                    <div>
+                    <div id="titre-aside">
                         <h1>Les plus populaires</h1>
-                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-chart-line" style="color: black"></i>
                     </div>
-                    <div>
-                        <div>
+                    <div id="populaires">
+                        <div class="populaire">
                             <img src="images/hebergements/4_small/hotel-soleil.jpg" alt="hotel le soleil du matin" />
+                            <div class="description-2">
                             <h2> Hôtel Le soleil du matin </h2>
                             <p> Nuit à partir de <strong>128€</strong></p>
                             <div>
+                                <br></br>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                             </div>
+                            </div>
                         </div>
-                        <div>
+                        <div class="populaire">
                             <img src="images/hebergements/4_small/chambre-hotes.jpg" alt="au coeur de l'eau" />
+                            <div class="description-2">
                             <h2> Au coeur de l'eau </br> Chambres d'hôtes </h2>
                             <p> Nuit à partir de <strong>71€</strong></p>
-                            <div>
+                            <div id="etoiles">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star" style="color: rgba(128, 128, 128, 0.3);"></i>
+                            </div>
                             </div>
                         </div>
-                        <div>
+                        <div class="populaire">
                             <img src="images/hebergements/4_small/hotel-bleu.jpg" alt="hotel tout bleu et blanc" />
+                            <div class="description-2">
                             <h2> Hôtel Tout bleu et Blanc </h2>
                             <p> Nuit à partir de <strong>68€</strong></p>
                             <div>
+                                <br></br>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star" style="color: rgba(128, 128, 128, 0.3);"></i>
+                            </div>
                             </div>
                         </div>
                     </div>
