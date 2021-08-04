@@ -1,0 +1,303 @@
+@font-face {
+    font-family: 'Raleway-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('police/Raleway-Regular.ttf') format('ttf');
+    }
+
+body {
+    font-family: 'Raleway-regular', sans-serif ;
+}
+/*police définie*/
+
+
+/*en-tête*/
+
+header {                                
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    padding-right: 75px;
+}
+
+#logo {
+    height: 60px;
+}
+
+
+/*corps de page*/
+
+main {
+    margin-top: 30px;
+}
+
+h1 + p {
+    font-size:0.9rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.fas {
+    color:rgb(45, 112, 255);
+}
+
+
+/*barre de recherche*/
+
+#barre-recherche .fas {
+    background-color:rgba(51, 51, 51, 0.199);
+    width: 50px;
+    height: 35px;
+    font-size: 1.2rem;
+    border-radius: 50px 0px 0px 50px;
+    text-align: center;
+    padding-top: 14px;  
+}
+
+#barre-saisie {
+    width: 175px;
+    height: 49px;
+}
+
+
+/*filtres*/
+
+#filtres {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+#filtres p {
+    font-weight: bold;
+}
+
+.filtre {
+    display: flex;
+    width: 11%;
+    margin-left: 40px;
+    border: 0.5px rgba(0, 0, 0, 0.295) solid;
+    border-radius: 25px;
+}
+
+#filtres .fas {
+    background-color:rgba(81, 136, 255, 0.199);
+    width: 50px;
+    height: 35px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 14px;
+    margin-right: 7px;
+}
+
+#info {
+    display: flex;
+}
+
+#info p {
+    font-size: 0.9rem;
+}
+
+#info .fas {
+    width: 30px;
+    height: 25px;
+    border: 0.5px rgba(0, 0, 0, 0.295) solid;
+    border-radius: 25px;
+    padding-top: 5px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+
+/*partie hébergements*/
+
+#section-milieu {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hebergements {
+    background-color: rgb(238, 238, 238);
+    border-radius: 20px;
+    padding: 30px;
+    width: 65%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+#hebergements img {
+    object-fit: cover;
+    width: 350px;
+    height: 175px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.logement {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 350px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.logements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.description {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+/*les plus populaires*/
+
+aside {
+    background-color: rgb(238, 238, 238);
+    border-radius: 20px;
+    padding: 30px;
+    width: 25%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside img {
+    object-fit: cover;
+    width: 120px;
+    height: 150px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#titre-aside {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 20px;
+}
+
+#titre-aside .fas {
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
+.populaire {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    width: 450px;
+    height: 150px;
+    display: flex;
+}
+
+.description-2 {
+    margin-top: 0px;
+    margin-left: 40px;
+}
+
+#etoiles {
+    margin-top: 35px;
+}
+
+#populaires {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+
+/*activités à Marseille*/
+
+#activites {
+    display: flex;
+}
+
+#activites img {
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    width: 430px;
+}
+
+figure {
+    border: 1px rgba(0, 0, 0, 0.219) solid;
+    border-radius: 20px;
+    padding: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 430px;
+}
+
+figcaption {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.figure-verticale {
+    height: 700px;
+}
+
+.figure-verticale img {
+    height: 650px;
+}
+
+.figure-horizontale {
+    height: 350px;
+}
+
+.figure-horizontale img {
+    height: 300px;
+}
+
+
+/*pied-de-page*/
+
+footer {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    padding: 30px;
+    margin-top: 60px;
+}
+
+h2 {
+    margin-left: 40px;
+}
+
+footer ul {
+    margin-top: 30px;
+    margin-right: 300px;
+    list-style-type: none;
+}
+
+footer li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
