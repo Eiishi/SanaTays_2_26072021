@@ -276,3 +276,28 @@ figcaption {
 .figure-horizontale img {
     height: 300px;
 }
+
+
+/*pied-de-page*/
+
+footer {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    padding: 30px;
+    margin-top: 60px;
+}
+
+h2 {
+    margin-left: 40px;
+}
+
+footer ul {
+    margin-top: 30px;
+    margin-right: 300px;
+    list-style-type: none;
+}
+
+footer li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
