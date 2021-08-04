@@ -33,11 +33,31 @@ nav li {
 
 
 
-/*logos*/
+/*images png*/
 
 .fas {
     color:rgb(45, 112, 255);
-   
+}
+
+#barre-recherche .fas {
+    background-color:rgba(51, 51, 51, 0.199);
+    width: 50px;
+    height: 35px;
+    font-size: 1.2rem;
+    border-radius: 50px 0px 0px 50px;
+    text-align: center;
+    padding-top: 14px;  
+}
+
+#filtres .fas {
+    background-color:rgba(81, 136, 255, 0.199);
+    width: 50px;
+    height: 35px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 14px;
+    margin-right: 7px;
 }
 
 
@@ -51,24 +71,32 @@ h1 + p {
     font-size:0.9rem;
 }
 
+h1 {
+    font-size: 1.5rem;
+}
+
 
 /*barre de recherche*/
 
-
+#barre-saisie {
+    width: 175px;
+    height: 49px;
+}
 
 
 /*filtres*/
 
 #filtres {
-    width: 100%;
+    margin-top: 10px;
     display: flex;
-    flex-direction: row;
 }
 
 .filtre {
     display: flex;
-    width: 10%;
+    width: 11%;
     margin-left: 40px;
+    border: 0.5px rgba(0, 0, 0, 0.295) solid;
+    border-radius: 25px;
 }
 
 #info {
@@ -77,6 +105,16 @@ h1 + p {
 
 #info p {
     font-size: 0.9rem;
+}
+
+#info .fas {
+    width: 30px;
+    height: 25px;
+    border: 0.5px rgba(0, 0, 0, 0.295) solid;
+    border-radius: 25px;
+    padding-top: 5px;
+    text-align: center;
+    margin-right: 5px;
 }
 
 
@@ -101,7 +139,8 @@ h1 + p {
 #hebergements img {
     object-fit: cover;
     width: 350px;
-    height: 175px; 
+    height: 175px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .logement {
@@ -149,13 +188,19 @@ aside img {
     object-fit: cover;
     width: 120px;
     height: 150px;
+    border-radius: 20px 0px 0px 20px;
 }
 
 #titre-aside {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 90%;
     margin-top: 20px;
+}
+
+#titre-aside .fas {
+    font-size: 2rem;
+    padding-top: 20px;
 }
 
 .populaire {
