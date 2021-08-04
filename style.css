@@ -27,6 +27,10 @@ nav li {
     padding-right: 75px;
 }
 
+header strong {
+    color: #0065FC;
+}
+
 #logo {
     height: 60px;
 }
@@ -78,7 +82,11 @@ a {
     height: 49px;
 }
 
-#bouton-rechercher {
+#bouton-rechercher-mobile {
+    display: none;
+}
+
+#bouton-rechercher-desktop {
     background-color: #0065FC;
     color: white;
     height: 50px;
@@ -102,12 +110,11 @@ a {
 
 .filtre {
     display: flex;
-    width: 240px;
     height: 50px;
     margin-left: 40px;
     border: 0.5px rgba(0, 0, 0, 0.295) solid;
     border-radius: 25px;
-    padding-right: 5px;
+    padding-right: 25px;
 }
 
 .filtre:hover {
@@ -149,14 +156,13 @@ a {
 
 #section-milieu {
     display: flex;
-    justify-content: space-between;
 }
 
 #hebergements {
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 30px;
-    width: 65%;
+    width: 1200px;
     height: 800px;
     display: flex;
     flex-direction: column;
@@ -173,8 +179,9 @@ a {
 
 .logement {
     background-color: white;
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 30px;
+    border: 3px ridge rgba(77, 77, 77, 0.15);
+    padding: 5px;
     width: 350px;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -205,8 +212,9 @@ aside {
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 30px;
-    width: 25%;
+    width: 500px;
     height: 800px;
+    margin-left: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,7 +222,7 @@ aside {
 
 aside img {
     object-fit: cover;
-    width: 120px;
+    width: 150px;
     height: 150px;
     border-radius: 20px 0px 0px 20px;
 }
@@ -233,8 +241,9 @@ aside img {
 
 .populaire {
     background-color: white;
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 30px;
+    border: 3px ridge rgba(77, 77, 77, 0.15);
+    padding: 5px;
     margin-top: 15px;
     margin-bottom: 35px;
     width: 450px;
@@ -244,7 +253,7 @@ aside img {
 
 .description-2 {
     margin-top: 0px;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 #etoiles {
@@ -274,6 +283,7 @@ aside img {
 figure {
     border: 1px rgba(0, 0, 0, 0.219) solid;
     border-radius: 20px;
+    border: 3px ridge rgba(77, 77, 77, 0.15);
     padding: 0px;
     margin-right: 20px;
     margin-left: 20px;
@@ -326,4 +336,73 @@ footer ul {
 footer li {
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+
+/*passage en responsive*/
+
+@media screen and (max-width: 1080px) {
+
+
+/*réagencement menu navigation*/
+
+
+
+/*refonte bouton rechercher*/
+
+#bouton-rechercher-desktop {
+    display: none;
+}
+
+
+#bouton-rechercher-mobile {
+    display: initial;
+    background-color: #0065FC;
+    color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 15px 15px 15px 15px;
+    font-weight: bold;
+}
+
+
+/*réagencement filtres*/
+
+#filtres {
+    flex-wrap: wrap;
+}
+
+.filtre {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+
+/*réagencement des sections*/
+
+#section-milieu {
+    flex-wrap: wrap-reverse;
+}
+
+aside {
+    border-radius: 0px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+#hebergements {
+    background-color: white;
+}
+
+#activites {
+    flex-direction: column;
+}
+
+
+/*réagencement du pied de page*/
+
+footer {
+    flex-direction: column;
+}
+
 }
