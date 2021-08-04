@@ -32,35 +32,6 @@ nav li {
 }
 
 
-
-/*images png*/
-
-.fas {
-    color:rgb(45, 112, 255);
-}
-
-#barre-recherche .fas {
-    background-color:rgba(51, 51, 51, 0.199);
-    width: 50px;
-    height: 35px;
-    font-size: 1.2rem;
-    border-radius: 50px 0px 0px 50px;
-    text-align: center;
-    padding-top: 14px;  
-}
-
-#filtres .fas {
-    background-color:rgba(81, 136, 255, 0.199);
-    width: 50px;
-    height: 35px;
-    font-size: 1.2rem;
-    border-radius: 50px;
-    text-align: center;
-    padding-top: 14px;
-    margin-right: 7px;
-}
-
-
 /*corps de page*/
 
 main {
@@ -75,8 +46,22 @@ h1 {
     font-size: 1.5rem;
 }
 
+.fas {
+    color:rgb(45, 112, 255);
+}
+
 
 /*barre de recherche*/
+
+#barre-recherche .fas {
+    background-color:rgba(51, 51, 51, 0.199);
+    width: 50px;
+    height: 35px;
+    font-size: 1.2rem;
+    border-radius: 50px 0px 0px 50px;
+    text-align: center;
+    padding-top: 14px;  
+}
 
 #barre-saisie {
     width: 175px;
@@ -87,8 +72,13 @@ h1 {
 /*filtres*/
 
 #filtres {
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     display: flex;
+}
+
+#filtres p {
+    font-weight: bold;
 }
 
 .filtre {
@@ -97,6 +87,17 @@ h1 {
     margin-left: 40px;
     border: 0.5px rgba(0, 0, 0, 0.295) solid;
     border-radius: 25px;
+}
+
+#filtres .fas {
+    background-color:rgba(81, 136, 255, 0.199);
+    width: 50px;
+    height: 35px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 14px;
+    margin-right: 7px;
 }
 
 #info {
@@ -134,6 +135,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 #hebergements img {
@@ -228,4 +230,49 @@ aside img {
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: 5px;
+}
+
+
+/*activités à Marseille*/
+
+#activites {
+    display: flex;
+}
+
+#activites img {
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    width: 430px;
+}
+
+figure {
+    border: 1px rgba(0, 0, 0, 0.219) solid;
+    border-radius: 20px;
+    padding: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 430px;
+}
+
+figcaption {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.figure-verticale {
+    height: 700px;
+}
+
+.figure-verticale img {
+    height: 650px;
+}
+
+.figure-horizontale {
+    height: 350px;
+}
+
+.figure-horizontale img {
+    height: 300px;
 }
