@@ -31,6 +31,11 @@ nav li {
     height: 60px;
 }
 
+header a:hover {
+    border-top: 2px #0065FC solid;
+    padding-top: 20px;
+}
+
 
 /*corps de page*/
 
@@ -47,7 +52,12 @@ h1 {
 }
 
 .fas {
-    color:rgb(45, 112, 255);
+    color:#0065FC;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -58,7 +68,7 @@ h1 {
     width: 50px;
     height: 35px;
     font-size: 1.2rem;
-    border-radius: 50px 0px 0px 50px;
+    border-radius: 15px 0px 0px 15px;
     text-align: center;
     padding-top: 14px;  
 }
@@ -66,6 +76,15 @@ h1 {
 #barre-saisie {
     width: 175px;
     height: 49px;
+}
+
+#bouton-rechercher {
+    background-color: #0065FC;
+    color: white;
+    height: 50px;
+    width: 100px;
+    border-radius: 0px 15px 15px 0px;
+    font-weight: bold;
 }
 
 
@@ -83,14 +102,21 @@ h1 {
 
 .filtre {
     display: flex;
-    width: 11%;
+    width: 240px;
+    height: 50px;
     margin-left: 40px;
     border: 0.5px rgba(0, 0, 0, 0.295) solid;
     border-radius: 25px;
+    padding-right: 5px;
+}
+
+.filtre:hover {
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.295);
+    background-color: rgba(116, 116, 116, 0.171);
 }
 
 #filtres .fas {
-    background-color:rgba(81, 136, 255, 0.199);
+    background-color:#DEEBFF;
     width: 50px;
     height: 35px;
     font-size: 1.2rem;
@@ -127,7 +153,7 @@ h1 {
 }
 
 #hebergements {
-    background-color: rgb(238, 238, 238);
+    background-color: #F2F2F2;
     border-radius: 20px;
     padding: 30px;
     width: 65%;
@@ -176,7 +202,7 @@ h2 {
 /*les plus populaires*/
 
 aside {
-    background-color: rgb(238, 238, 238);
+    background-color: #F2F2F2;
     border-radius: 20px;
     padding: 30px;
     width: 25%;
@@ -281,13 +307,13 @@ figcaption {
 /*pied-de-page*/
 
 footer {
-    background-color: rgb(238, 238, 238);
+    background-color: #F2F2F2;
     display: flex;
     padding: 30px;
     margin-top: 60px;
 }
 
-h2 {
+h3 {
     margin-left: 40px;
 }
 
