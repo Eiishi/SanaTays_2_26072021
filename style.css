@@ -287,12 +287,13 @@ aside img {
 
 #activites {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #activites img {
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
-    width: 420px;
+    width: 405px;
 }
 
 figure {
@@ -344,6 +345,7 @@ footer li {
 
 /*passage en responsive*/
 
+
 @media screen and (max-width: 1080px) {
                                 /*pour width entre 700 et 1080px*/
 
@@ -379,18 +381,6 @@ aside {
     background-color: white;
 }
 
-#activites {
-    flex-direction: column;
-}
-
-figure img {
-    min-width: 100%;
-    max-height: 350px;
-}
-
-figure {
-    margin-top: 30px;
-}
 
 
 /*réagencement du pied de page*/
@@ -474,6 +464,26 @@ nav li {
 
 footer {
     flex-direction: column;
+}
+
+}
+
+@media screen and (max-width: 1200px) {
+                            /*pour width entre 1080 et 1200px*/
+
+/*passage des activités en colonne*/
+
+#activites {
+    flex-direction: column;
+}
+
+figure img {
+    min-width: 100%;
+    max-height: 350px;
+}
+
+figure {
+    margin-top: 30px;
 }
 
 }
