@@ -346,6 +346,76 @@ footer li {
 /*passage en responsive*/
 
 
+@media screen and (max-width: 700px) {
+    /*pour width < 700px*/ 
+
+/*réagencement menu navigation*/
+
+#nav-ancres {
+margin-top: 100px;
+margin-left: -150px;
+border-bottom: 4px #94949433 solid;
+}
+
+nav li {
+font-size: 1.2rem;
+width:120px;
+margin-left: -180px;
+}
+
+#nav-ancres li {
+padding-bottom: 20px;
+padding-left:200px;
+padding-right:150px;
+}
+
+#nav-ancres li :hover {
+border-bottom: 4px #0065FC solid;
+padding-bottom: 20px;
+border-top: none;
+color: #0065FC;
+}
+
+
+/*refonte bouton rechercher*/
+
+#bouton-rechercher-desktop {
+display: none;
+}
+
+#bouton-rechercher-mobile {
+display: initial;
+}
+
+#bouton-rechercher-mobile .fas {
+position: relative;
+color: white;
+font-size: 1.2rem;
+padding-top: 15px;  
+padding-bottom: 3px;
+padding-left: 10px;
+}
+
+#bouton-rechercher-mobile input {
+position: absolute;
+width: 50px;
+height: 53px;
+border: 0px rgba(0, 0, 0, 0) solid;
+background-color: #0065FC;
+border-radius: 0px 15px 15px 0px;
+margin-left: -5px;
+}
+
+
+/*réagencement du pied de page*/
+
+footer {
+flex-direction: column;
+}
+
+}
+
+
 @media screen and (max-width: 1080px) {
                                 /*pour width entre 700 et 1080px*/
 
@@ -382,7 +452,6 @@ aside {
 }
 
 
-
 /*réagencement du pied de page*/
 
 footer {
@@ -393,80 +462,8 @@ footer ul {
     margin-right: 0px;
 }
 
-
 }
 
-
-@media screen and (max-width: 700px) {
-                                /*pour width < 700px*/ 
-
-/*réagencement menu navigation*/
-
-#nav-ancres {
-    margin-top: 100px;
-    margin-left: -150px;
-}
-
-nav li {
-    font-size: 1.2rem;
-    width:100px;
-    margin-left: -180px;
-}
-
-#nav-ancres li {
-    padding-bottom: 20px;
-    padding-left:150px;
-    padding-right:150px;
-    border-bottom: 4px #94949433 solid;
-    
-}
-
-#nav-ancres li :hover {
-    border-bottom: 4px #0065FC solid;
-    padding-bottom: 20px;
-    border-top: none;
-    color: #0065FC;
-}
-
-
-/*refonte bouton rechercher*/
-
-#bouton-rechercher-desktop {
-    display: none;
-}
-
-
-#bouton-rechercher-mobile {
-    display: initial;
-}
-
-#bouton-rechercher-mobile .fas {
-    position: relative;
-    color: white;
-    font-size: 1.2rem;
-    padding-top: 15px;  
-    padding-bottom: 3px;
-    padding-left: 10px;
-}
-
-#bouton-rechercher-mobile input {
-    position: absolute;
-    width: 50px;
-    height: 53px;
-    border: 0px rgba(0, 0, 0, 0) solid;
-    background-color: #0065FC;
-    border-radius: 0px 15px 15px 0px;
-    margin-left: -5px;
-}
-
-
-/*réagencement du pied de page*/
-
-footer {
-    flex-direction: column;
-}
-
-}
 
 @media screen and (max-width: 1200px) {
                             /*pour width entre 1080 et 1200px*/
