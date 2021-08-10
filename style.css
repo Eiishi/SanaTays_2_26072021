@@ -209,7 +209,6 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: space-around;
 }
 
 .description {
@@ -346,6 +345,76 @@ footer li {
 /*passage en responsive*/
 
 
+@media screen and (max-width: 1080px) {
+    /*pour width < 1080px*/
+
+/*réagencement filtres*/
+
+#titre-filtres {
+min-width: 100%;
+}
+
+#filtres {
+flex-wrap: wrap;
+}
+
+.filtre {
+margin-top: 7px;
+margin-bottom: 7px;
+}
+
+
+/*réagencement des sections*/
+
+#section-milieu {
+flex-wrap: wrap-reverse;
+}
+
+aside {
+border-radius: 0px;
+margin-left: -20px;
+width: 100%;
+}
+
+#hebergements {
+background-color: white;
+}
+
+
+/*réagencement du pied de page*/
+
+footer {
+padding-left: 0px;
+}
+
+footer ul {
+margin-right: 0px;
+}
+
+}
+
+
+@media screen and (max-width: 1010px) {
+    /*pour width < 1010px*/
+
+/*passage des activités en colonne*/
+
+#activites {
+flex-direction: column;
+}
+
+figure img {
+min-width: 100%;
+max-height: 350px;
+}
+
+figure {
+margin-top: 30px;
+}
+
+}
+
+
 @media screen and (max-width: 700px) {
     /*pour width < 700px*/ 
 
@@ -400,7 +469,7 @@ padding-left: 10px;
 position: absolute;
 width: 50px;
 height: 53px;
-border: 0px rgba(0, 0, 0, 0) solid;
+border: none;
 background-color: #0065FC;
 border-radius: 0px 15px 15px 0px;
 margin-left: -5px;
@@ -411,76 +480,6 @@ margin-left: -5px;
 
 footer {
 flex-direction: column;
-}
-
-}
-
-
-@media screen and (max-width: 1080px) {
-                                /*pour width entre 700 et 1080px*/
-
-/*réagencement filtres*/
-
-#titre-filtres {
-    min-width: 100%;
-}
-
-#filtres {
-    flex-wrap: wrap;
-}
-
-.filtre {
-    margin-top: 7px;
-    margin-bottom: 7px;
-}
-
-
-/*réagencement des sections*/
-
-#section-milieu {
-    flex-wrap: wrap-reverse;
-}
-
-aside {
-    border-radius: 0px;
-    margin-left: -20px;
-    width: 100%;
-}
-
-#hebergements {
-    background-color: white;
-}
-
-
-/*réagencement du pied de page*/
-
-footer {
-    padding-left: 0px;
-}
-
-footer ul {
-    margin-right: 0px;
-}
-
-}
-
-
-@media screen and (max-width: 1200px) {
-                            /*pour width entre 1080 et 1200px*/
-
-/*passage des activités en colonne*/
-
-#activites {
-    flex-direction: column;
-}
-
-figure img {
-    min-width: 100%;
-    max-height: 350px;
-}
-
-figure {
-    margin-top: 30px;
 }
 
 }
