@@ -1,12 +1,10 @@
 @font-face {
     font-family: 'Raleway-Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: url('police/Raleway-Regular.ttf') format('ttf');
+    src: url('police/Raleway-Regular.ttf') format('truetype');
     }
 
 body {
-    font-family: 'Raleway-Regular', sans-serif ;
+    font-family: 'Raleway-Regular' ;
 }
 /*police définie*/
 
