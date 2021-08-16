@@ -6,7 +6,7 @@
     }
 
 body {
-    font-family: 'Raleway-regular', sans-serif ;
+    font-family: 'Raleway-Regular', sans-serif ;
 }
 /*police définie*/
 
@@ -297,7 +297,7 @@ aside img {
 #activites img {
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
-    width: 405px;
+    width: 100%;
 }
 
 figure {
@@ -329,6 +329,9 @@ figcaption {
 
 #activites div {
     height: 710px;
+    height: 710px;
+    flex: 1 1 auto;
+    width: 33%;
 }
 
 .figure-horizontale figure {
@@ -337,12 +340,19 @@ figcaption {
 
 }
 
+@media (min-width: 1250px) {
+    #activites div {
+        width: 25%;
+    }
+}
+
 
 /*pied-de-page*/
 
 footer {
     background-color: #F2F2F2;
     display: flex;
+    justify-content: space-around;
     padding: 30px;
     margin-top: 60px;
 }
@@ -353,13 +363,30 @@ h4 {
 
 footer ul {
     margin-top: 30px;
-    margin-right: 300px;
     list-style-type: none;
 }
 
 footer li {
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+@media (min-width:1400px) {
+    footer {
+        margin-left: -200px;
+    }
+}
+
+@media (max-width:1400px) {
+    footer {
+        margin-left: -100px;
+    }
+}
+
+@media (max-width:1000px) {
+    footer {
+        margin-left: -50px;
+    }
 }
 
 
@@ -384,6 +411,11 @@ footer li {
     margin-bottom: 7px;
 }
 
+}
+
+
+@media (max-width:1481px) {
+    
 
 /*réagencement des sections*/
 
@@ -454,17 +486,6 @@ h3 + p {
 
 .logement {
     width: 100%;
-}
-
-
-/*réagencement du pied de page*/
-
-footer {
-    padding-left: 0px;
-}
-
-footer ul {
-    margin-right: 0px;
 }
 
 }
