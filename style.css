@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Raleway-Regular' ;
+    margin: 0;
 }
 /*police définie*/
 
@@ -22,22 +23,20 @@ nav ul {
 
 nav {
     display: flex;
+    gap: 30px;
+    margin: 20px 40px 0px 0px;
 }
 
-#nav-ancres {
+.nav-ancres {
     display: flex;
-    margin-right: -50px;
-}
-
-nav li {
-    padding-right: 75px;
+    gap: 70px;
 }
 
 header strong {
     color: #0065FC;
 }
 
-#logo {
+.logo {
     height: 60px;
     margin-left: 40px;
     margin-top: 20px;
@@ -46,9 +45,8 @@ header strong {
 header a:hover {
     border-top: 2px #0065FC solid;
     color: #0065FC;
-    padding-top: 20px;
+    padding: 30px 20px 0px 20px;
 }
-
 
 /*corps de page*/
 
@@ -64,6 +62,7 @@ h1 + p {
 
 h1, h2 {
     font-size: 1.5rem;
+    font-weight: 1000;
 }
 
 .fas {
@@ -79,6 +78,7 @@ a {
 /*barre de recherche*/
 
 #icone-map {
+    color: red;
     background-color:rgba(51, 51, 51, 0.11);
     width: 50px;
     height: 35px;
@@ -90,7 +90,7 @@ a {
     padding-left: 2px;
 }
 
-#barre-saisie {
+.barre-saisie {
     border: 1px rgba(0, 0, 0, 0.212) solid;
     width: 175px;
     height: 52px;
@@ -104,11 +104,11 @@ a {
     font-size: 1rem;
 }
 
-#bouton-rechercher-mobile {
+.bouton-rechercher-mobile {
     display: none;
 }
 
-#bouton-rechercher-desktop {
+.bouton-rechercher-desktop {
     background-color: #0065FC;
     color: white;
     height: 53px;
@@ -122,13 +122,13 @@ a {
 
 /*filtres*/
 
-#filtres {
+.filtres {
     margin-top: 30px;
     margin-bottom: 10px;
     display: flex;
 }
 
-#filtres p {
+.filtres p {
     font-weight: bold;
 }
 
@@ -144,9 +144,10 @@ a {
 .filtre:hover {
     box-shadow: 4px 4px rgba(0, 0, 0, 0.295);
     background-color: rgba(116, 116, 116, 0.171);
+    cursor: pointer;
 }
 
-#filtres .fas {
+.filtres .fas {
     background-color:#DEEBFF;
     width: 50px;
     height: 35px;
@@ -157,15 +158,15 @@ a {
     margin-right: 7px;
 }
 
-#info {
+.info {
     display: flex;
 }
 
-#info p {
+.info p {
     font-size: 0.9rem;
 }
 
-#info .fas {
+.info .fas {
     width: 30px;
     height: 25px;
     border: 0.5px rgba(0, 0, 0, 0.295) solid;
@@ -178,24 +179,21 @@ a {
 
 /*partie hébergements*/
 
-#section-milieu {
+.section-milieu {
     display: flex;
+    justify-content: space-between;
 }
 
 #hebergements {
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 30px;
-    width: 1200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 40px;
+    max-width: 65%;
 }
 
 #hebergements img {
     object-fit: cover;
-    width: 350px;
+    width: 100%;
     height: 175px;
     border-radius: 20px 20px 0px 0px;
 }
@@ -234,29 +232,22 @@ aside {
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 30px;
-    width: 500px;
-    max-height: 775px;
-    margin-left: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 25%;
 }
 
 aside img {
     object-fit: cover;
-    width: 150px;
-    height: 150px;
-    border-radius: 20px 0px 0px 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 25px 0px 0px 25px;
 }
 
-#titre-aside {
+.titre-aside {
     display: flex;
     justify-content: space-between;
-    width: 90%;
-    margin-top: 20px;
 }
 
-#titre-aside .fas {
+.titre-aside .fas {
     font-size: 2rem;
     padding-top: 20px;
 }
@@ -266,9 +257,7 @@ aside img {
     border-radius: 30px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.233);
     padding: 5px;
-    margin-top: 15px;
     margin-bottom: 35px;
-    width: 450px;
     display: flex;
 }
 
@@ -279,20 +268,19 @@ aside img {
 
 
 #populaires {
-    display: flex;
-    flex-direction: column;
     margin-top: 30px;
 }
 
 
 /*activités à Marseille*/
 
-#activites {
+.activites {
     display: flex;
     flex-wrap: wrap;
+    gap: 3%;
 }
 
-#activites img {
+.activites img {
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
     width: 100%;
@@ -301,7 +289,7 @@ aside img {
 figure {
     border-radius: 20px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.233);
-    margin-left: 0px;
+    margin: 0px;
 }
 
 figcaption {
@@ -325,22 +313,59 @@ figcaption {
     height: 295px;
 }
 
-#activites div {
-    height: 710px;
-    height: 710px;
+.activites div {
     flex: 1 1 auto;
-    width: 33%;
+    width: 25%;
 }
 
 .figure-horizontale figure {
-    height: 339px;
+    margin-bottom: 15px;
 }
 
 }
 
-@media (min-width: 1250px) {
-    #activites div {
-        width: 25%;
+
+@media (min-width: 1350px) {
+
+#pomegues img {
+    height: 360px;
+}
+
+#pomegues {
+    height: 420px;
+}
+
+#frioul img {
+    height: 160px;
+}
+
+#frioul {
+    height: 205px;
+    margin-top: 70px;
+}
+
+#garde img {
+    height: 260px;
+}
+
+#garde {
+    height: 310px;
+}
+
+#longchamp img {
+    height: 270px;
+}
+
+#longchamp {
+    margin-top: 70px;
+    height: 315px;
+}
+
+}
+
+@media (min-width: 1350px) {
+    .activites div {
+        width: 20%;
     }
 }
 
@@ -350,7 +375,7 @@ figcaption {
 footer {
     background-color: #F2F2F2;
     display: flex;
-    justify-content: space-around;
+    gap: 20%;
     padding: 30px;
     margin-top: 60px;
 }
@@ -369,38 +394,33 @@ footer li {
     margin-bottom: 15px;
 }
 
-@media (min-width:1400px) {
-    footer {
-        margin-left: -200px;
+
+/*--------------------------------passage en responsive-------------------------------------------*/
+
+@media (max-width:1110px) {
+
+footer {
+    gap: 10%;
     }
 }
 
-@media (max-width:1400px) {
-    footer {
-        margin-left: -100px;
+@media (max-width:860px) {
+
+footer {
+    flex-direction: column;
     }
 }
-
-@media (max-width:1000px) {
-    footer {
-        margin-left: -50px;
-    }
-}
-
-
-/*passage en responsive*/
 
 
 @media (max-width: 1080px) {
-    /*pour width < 1080px*/
 
 /*réagencement filtres*/
 
-#titre-filtres {
+.titre-filtres {
     min-width: 100%;
 }
 
-#filtres {
+.filtres {
     flex-wrap: wrap;
 }
 
@@ -417,7 +437,7 @@ footer li {
 
 /*réagencement des sections*/
 
-#section-milieu {
+.section-milieu {
     flex-wrap: wrap-reverse;
 }
 
@@ -458,14 +478,14 @@ h3 + p {
     margin-top: -20px;
 }
 
-#titre-aside {
+.titre-aside {
     margin-top: 0px;
 }
 
 #hebergements {
     background-color: white;
     padding: 0px;
-    width: initial;
+    max-width: initial;
 }
 
 #hebergements img {
@@ -490,15 +510,14 @@ h3 + p {
 
 
 @media (max-width: 1010px) {
-    /*pour width < 1010px*/
 
 /*passage des activités en colonne*/
 
-#activites {
+.activites {
     flex-direction: column;
 }
 
-#activites img {
+.activites img {
     width: 100%;
 }
 
@@ -508,7 +527,6 @@ figure img {
 
 figure {
     margin-top: 30px;
-    width: 102%;
     height: 350px;
 }
 
@@ -516,68 +534,69 @@ figure {
     margin-bottom: 15px;
 }
 
-
 }
 
 
-@media (max-width: 700px) {
-    /*pour width < 700px*/ 
+@media (max-width: 750px) {
 
 /*réagencement menu navigation*/
 
 header {
-    display: initial;
+    display: block;
+}
+
+nav {
+    margin: 0;
 }
 
 header img {
     position: absolute;
 }
 
-#nav-ancres {
+.nav-ancres {
 display: flex;
-width: 100%;
 border-bottom: 4px #94949433 solid;
 margin-top: 120px;
-margin-right: 0px;
-padding-left: 70px;
+width: 100%;
+padding: 0;
 }
 
 nav li {
 font-size: 1.2rem;
-width:50%;
+text-align: center;
 }
 
-#nav-ancres li {
+.nav-ancres li {
 padding-bottom: 20px;
-padding-left:50px;
+width: 50%;
 }
 
-#nav-ancres li :hover {
+.nav-ancres li :hover {
 border-bottom: 4px #0065FC solid;
 padding-bottom: 20px;
 border-top: none;
 color: #0065FC;
 }
 
-#nav-inscription {
+.nav-inscription {
 position: absolute;
-right: 0px;
+right: 10px;
 }
 
 
 /*refonte bouton rechercher*/
 
-#bouton-rechercher-desktop {
+.bouton-rechercher-desktop {
     display: none;
     }
     
-    #bouton-rechercher-mobile {
+.bouton-rechercher-mobile {
     display: initial;
     border: none;
     margin-left: -10px;
     }
     
-    #bouton-rechercher-mobile .fas {
+.bouton-rechercher-mobile .fas {
     position: relative;
     color: white;
     font-size: 1.2rem;
@@ -586,7 +605,7 @@ right: 0px;
     padding-left: 10px;
     }
     
-    #bouton-rechercher-mobile input {
+.bouton-rechercher-mobile input {
     position: absolute;
     width: 50px;
     height: 53px;
@@ -607,57 +626,41 @@ right: 0px;
     padding-bottom: 6px;
 }
 
-#barre-saisie {
-    width: 80%;
+.barre-saisie {
+    width: 60%;
     height: 60px;
 }
 
-#bouton-rechercher-mobile input {
+.bouton-rechercher-mobile input {
     width: 60px;
     height: 60px;
 }
 
-#bouton-rechercher-mobile .fas {
+.bouton-rechercher-mobile .fas {
     font-size: 1.4rem;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 14px;
 }
 
-
-/*grossissement des filtres*/
-
-.filtre {
-    display: flex;
-    height: 75px;
-    max-width: 240px;
-    margin-left: 40px;
-    border: 0.1px rgba(0, 0, 0, 0.295) solid;
-    border-radius: 50px;
-    padding-right: 25px;
 }
 
-#filtres .fas {
-    background-color:#DEEBFF;
-    width: 75px;
-    height: 50px;
-    font-size: 1.5rem;
-    border-radius: 50px;
-    text-align: center;
-    padding-top: 25px;
-    margin-right: 7px;
+@media (max-width: 615px) {
+.populaire {
+    display: block;
+    }
+
+aside img {
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
 }
 
-#filtres p {
-    font-size: 1.1rem;
-    margin-top: 25px;
+#populaires .fas {
+    margin: 10px 0px;
 }
 
-
-/*réagencement du pied de page*/
-
-footer {
-flex-direction: column;
+.info .fas {
+    width: 40px;
 }
 
 }
