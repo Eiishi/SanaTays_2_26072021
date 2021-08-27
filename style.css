@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Raleway-Regular';
-    src: url('police/Raleway-Regular.ttf') format('truetype');
+    src: url('police/Raleway-Regular.ttf') format('truetype'), url('police/Raleway-Bold.ttf') format('truetype');
     }
 
 body {
-    font-family: 'Raleway-Regular' ;
+    font-family: 'Raleway-Regular', sans-serif;
     margin: 0;
 }
 /*police définie*/
@@ -62,6 +62,7 @@ h1 + p {
 
 h1, h2 {
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .fas {
@@ -77,7 +78,6 @@ a {
 /*barre de recherche*/
 
 #icone-map {
-    color: red;
     background-color:rgba(51, 51, 51, 0.11);
     width: 50px;
     height: 35px;
@@ -399,7 +399,7 @@ footer li {
 @media (max-width:1110px) {
 
 footer {
-    gap: 10%;
+    gap: 35%;
     }
 }
 
@@ -421,11 +421,11 @@ footer {
 
 .filtres {
     flex-wrap: wrap;
+    column-gap: 20px;
 }
 
 .filtre {
-    margin-top: 7px;
-    margin-bottom: 7px;
+    margin: 7px 0px 7px 0px;
 }
 
 }
@@ -558,6 +558,7 @@ border-bottom: 4px #94949433 solid;
 margin-top: 120px;
 width: 100%;
 padding: 0;
+gap: 0;
 }
 
 nav li {
@@ -572,9 +573,9 @@ width: 50%;
 
 .nav-ancres li :hover {
 border-bottom: 4px #0065FC solid;
-padding-bottom: 20px;
 border-top: none;
 color: #0065FC;
+padding: 0px 28% 20px 28%;
 }
 
 .nav-inscription {
@@ -596,12 +597,13 @@ right: 10px;
     }
     
 .bouton-rechercher-mobile .fas {
-    position: relative;
     color: white;
     font-size: 1.2rem;
     padding-top: 15px;  
     padding-bottom: 3px;
     padding-left: 10px;
+    position: absolute;
+    margin-top: 18px;
     }
     
 .bouton-rechercher-mobile input {
