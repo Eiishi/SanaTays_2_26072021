@@ -137,7 +137,7 @@ a {
     margin-left: 40px;
     border: 0.1px rgba(0, 0, 0, 0.295) solid;
     border-radius: 25px;
-    padding-right: 25px;
+    padding-right: 20px;
 }
 
 .filtre:hover {
@@ -314,7 +314,7 @@ figcaption {
 
 .activites div {
     flex: 1 1 auto;
-    width: 25%;
+    width: 20%;
 }
 
 .figure-horizontale figure {
@@ -396,10 +396,10 @@ footer li {
 
 /*--------------------------------passage en responsive-------------------------------------------*/
 
-@media (max-width:1110px) {
+@media (max-width:1115px) {
 
 footer {
-    gap: 35%;
+    gap: 10%;
     }
 }
 
@@ -489,7 +489,6 @@ h3 + p {
 
 #hebergements img {
     width: 100%;
-    height: initial;
     max-height: 275px;
 }
 
@@ -538,6 +537,10 @@ figure {
 
 @media (max-width: 750px) {
 
+main {
+    margin: 0 20px;
+}    
+
 /*réagencement menu navigation*/
 
 header {
@@ -550,6 +553,11 @@ nav {
 
 header img {
     position: absolute;
+}
+
+.logo {
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .nav-ancres {
@@ -575,12 +583,92 @@ width: 50%;
 border-bottom: 4px #0065FC solid;
 border-top: none;
 color: #0065FC;
-padding: 0px 28% 20px 28%;
+padding: 0px 20% 20px 20%;
+}
+
+.info .fas {
+    width: 40px;
 }
 
 .nav-inscription {
-position: absolute;
-right: 10px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h1 + p {
+    font-size: 0.9rem;
+}
+
+.populaire {
+    height: 150px;
+}
+
+.populaire img {
+    height: 150px;
+    width: 125px;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+h3 + p {
+    font-size: 0.9rem;
+}
+
+#populaires .fas {
+    font-size: 1rem;
+    margin-top: 35px;
+}
+
+#hebergements img {
+    height: 130px;
+}
+
+.activites img {
+    height: 155px;
+}
+
+figure {
+    height: 200px;
+}
+
+footer {
+    padding: 0;
+}
+
+
+@media (max-width:374px) {
+    .nav-ancres li :hover {
+        padding: 0px 10% 20px 10%;
+    }
+
+    .description-2 {
+        margin-left: 10px;
+    }
+
+    .logo {
+        margin: 10px;
+    }
+
+    .populaire {
+        display: block;
+    }
+    
+    aside img {
+        width: 100%;
+        border-radius: 25px 25px 0px 0px;
+    }
+    
+    #populaires .fas {
+        margin: 10px 0px;
+    }
+    
 }
 
 
@@ -642,26 +730,6 @@ right: 10px;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 14px;
-}
-
-}
-
-@media (max-width: 615px) {
-.populaire {
-    display: block;
-    }
-
-aside img {
-    width: 100%;
-    border-radius: 25px 25px 0px 0px;
-}
-
-#populaires .fas {
-    margin: 10px 0px;
-}
-
-.info .fas {
-    width: 40px;
 }
 
 }
