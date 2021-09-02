@@ -43,9 +43,14 @@ header strong {
 }
 
 header a:hover {
-    border-top: 2px #0065FC solid;
     color: #0065FC;
-    padding: 30px 20px 0px 20px;
+}
+
+@media (min-width:751px) {
+    header a:hover {
+        border-top: 2px #0065FC solid;
+        padding: 30px 20px 0px 20px;
+    }
 }
 
 /*corps de page*/
@@ -562,11 +567,16 @@ header img {
 
 .nav-ancres {
 display: flex;
-border-bottom: 4px #94949433 solid;
 margin-top: 120px;
 width: 100%;
-padding: 0;
 gap: 0;
+padding-left: 0;
+}
+
+.nav-ancres a {
+display: block;
+border-bottom: 4px #94949433 solid;
+padding: 0px 20% 20px 20%;
 }
 
 nav li {
@@ -575,15 +585,12 @@ text-align: center;
 }
 
 .nav-ancres li {
-padding-bottom: 20px;
 width: 50%;
 }
 
-.nav-ancres li :hover {
+.nav-ancres a:hover {
 border-bottom: 4px #0065FC solid;
-border-top: none;
 color: #0065FC;
-padding: 0px 20% 20px 20%;
 }
 
 .info .fas {
