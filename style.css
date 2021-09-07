@@ -23,13 +23,12 @@ nav ul {
 
 nav {
     display: flex;
-    gap: 30px;
     margin: 20px 40px 0px 0px;
 }
 
 .nav-ancres {
     display: flex;
-    gap: 70px;
+    gap: 50px;
 }
 
 header strong {
@@ -47,9 +46,13 @@ header a:hover {
 }
 
 @media (min-width:751px) {
+    header a {
+        padding: 0px 20px 0px 20px;
+    }
+
     header a:hover {
         border-top: 2px #0065FC solid;
-        padding: 30px 20px 0px 20px;
+        padding-top: 30px;
     }
 }
 
@@ -244,6 +247,13 @@ aside img {
     width: 200px;
     height: 200px;
     border-radius: 25px 0px 0px 25px;
+}
+
+@media (min-width: 1481px) {
+    aside img {
+        min-width: 40%;
+        max-width: 40%;
+    }
 }
 
 .titre-aside {
